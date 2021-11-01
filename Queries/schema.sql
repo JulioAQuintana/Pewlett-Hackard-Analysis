@@ -7,7 +7,14 @@ CREATE TABLE employees (emp_no INT NOT NULL,
      PRIMARY KEY (emp_no)
 );
 
-select * from employees
+CREATE TABLE dept_emp (emp_no INT NOT NULL,
+     dept_no varchar (4) NOT NULL,
+     from_date date NOT NULL,
+     to_date date NOT NULL,
+	 FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
+     FOREIGN KEY (dept_no) REFERENCES departments (dept_no)
+);
+
 
 CREATE TABLE dept_manager (
 dept_no VARCHAR(4) NOT NULL,
@@ -48,7 +55,7 @@ CREATE TABLE Titles(
   emp_no INT NOT NULL,
   title VARCHAR(50)NOT NULL,
   from_date DATE NOT NULL,
-FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-PRIMARY KEY (emp_no)
+  to_date DATE NOT NULL,
+FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
 
