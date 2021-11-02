@@ -27,8 +27,8 @@ the following data outcomes was given from the analysis, helped by comments in t
     1549 position will be eligible to the program and 6 of 7 position are covered with employees in that program, Managers is a position that doesn't has an eligible employee to participate in the program but that tile only need filled by 2 positions, for this case is not a major issue.   
 
 ## Resources 
--Data Source: Employee_Challenge_starter_code.sql
--Software PgAdmin 4
+### -Data Source: Employee_Challenge_starter_code.sql
+### -Software PgAdmin 4
 
 For any question please go into SQL code located in Query folder 
 -Final Query Reference: (https://github.com/JulioAQuintana/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql)
